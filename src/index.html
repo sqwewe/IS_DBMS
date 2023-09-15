@@ -18,213 +18,445 @@
             </a>
         </div>
     </nav>
-<div class="text-align-center">Существует несколько основных типов баз данных, каждый из которых имеет свои преимущества и недостатки, а
-    также
-    подходит для различных практических задач. Давайте рассмотрим некоторые из них и сравним их по нескольким
-    критериям.</div>
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">Реляционные базы данных</h5>
-            <ol class="card-text list-group list-group-numbered">
-                <li class="list-group-item">Бухгалтерия и финансы;</li>
-                <li class="list-group-item">Управление данными клиентов;</li>
-                <li class="list-group-item">Аналитика данных.</li>
-            </ol>
-            <button type="button" class="btn btn-primary my-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Подробнее
-            </button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Реляционные базы данных</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <strong>Преимущества:</strong>
-                            <div class="accordion" id="accordionPanelsStayOpenExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
-                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                                            Структурированные данные:
-                                        </button>
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
-                                        <div class="accordion-body">
-                                            Хранят данные в виде таблиц, что удобно для организации и поиска
-                                            информации.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
-                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                            ACID-совместимость:
-                                        </button>
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                                        <div class="accordion-body">
-                                            Обеспечивают надежность и целостность данных.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
-                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                            SQL:
-                                        </button>
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                                        <div class="accordion-body">
-                                            Мощный язык для выполнения запросов и анализа данных.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFo"
-                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseFo">
-                                            Широко распространены:
-                                        </button>
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseFo" class="accordion-collapse collapse">
-                                        <div class="accordion-body">
-                                            Есть много популярных СУБД, таких как MySQL, PostgreSQL, и Oracle.
-                                        </div>
-                                    </div>
-                                </div>
-                                <strong>Недостатки:</strong>
-                                <div class="accordion" id="accordionPanelsStayOpenExampleFalse">
+    <div class="text-align-center px-4">
+        <h5>Существует несколько основных типов баз данных, каждый из которых имеет свои
+            преимущества и недостатки, а
+            также
+            подходит для различных практических задач. Давайте рассмотрим некоторые из них и сравним их по нескольким
+            критериям.</h5>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="card  mx-3 my-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Реляционные базы данных</h5>
+                <ol class="card-text list-group list-group-numbered">
+                    <li class="list-group-item">Бухгалтерия и финансы;</li>
+                    <li class="list-group-item">Управление данными клиентов;</li>
+                    <li class="list-group-item">Аналитика данных.</li>
+                </ol>
+                <button type="button" class="btn btn-primary my-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Подробнее
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Реляционные базы данных</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/src/img/relation_dbms.png" class="img-fluid" alt="...">
+                                <strong>Преимущества:</strong>
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive"
-                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                                                Жесткая схема:
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                                Структурированные данные:
                                             </button>
                                         </h2>
-                                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
                                             <div class="accordion-body">
-                                                Изменение структуры данных может быть сложным и затратным процессом.
-                                                Не всегда эффективны для больших объемов данных и высоконагруженных
+                                                Хранят данные в виде таблиц, что удобно для организации и поиска
+                                                информации.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                                ACID-совместимость:
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                Обеспечивают надежность и целостность данных.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                SQL:
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                Мощный язык для выполнения запросов и анализа данных.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFo"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseFo">
+                                                Широко распространены:
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseFo" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                Есть много популярных СУБД, таких как MySQL, PostgreSQL, и Oracle.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <strong>Недостатки:</strong>
+                                    <div class="accordion" id="accordionPanelsStayOpenExampleFalse">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                                    aria-controls="panelsStayOpen-collapseFive">
+                                                    Жесткая схема:
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    Изменение структуры данных может быть сложным и затратным
+                                                    процессом.
+                                                    Не всегда эффективны для больших объемов данных и
+                                                    высоконагруженных
+                                                    систем.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mx-3 my-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">NoSQL базы данных</h5>
+                <ol class="card-text list-group list-group-numbered">
+                    <li class="list-group-item">Социальные сети;</li>
+                    <li class="list-group-item">Хранение и анализ больших объемов данных;</li>
+                    <li class="list-group-item">Интернет вещей (IoT).</li>
+                </ol>
+                <button type="button" class="btn btn-primary my-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalNOSQL">
+                    Подробнее
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalNOSQL" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Реляционные базы данных</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/src/img/nosql.png" class="img-fluid" alt="...">
+                                <strong>Преимущества:</strong>
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                                Гибкость схемы:
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                Позволяют хранить неструктурированные или полуструктурированные
+                                                данные.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                                Масштабируемость:
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                Хорошо подходят для больших объемов данных и высоконагруженных
                                                 систем.
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">NoSQL базы данных</h5>
-            <ol class="card-text list-group list-group-numbered">
-                <li class="list-group-item">Социальные сети;</li>
-                <li class="list-group-item">Хранение и анализ больших объемов данных;</li>
-                <li class="list-group-item">Интернет вещей (IoT).</li>
-            </ol>
-            <button type="button" class="btn btn-primary my-2" data-bs-toggle="modal"
-                data-bs-target="#exampleModalNOSQL">
-                Подробнее
-            </button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModalNOSQL" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Реляционные базы данных</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <strong>Преимущества:</strong>
-                            <div class="accordion" id="accordionPanelsStayOpenExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
-                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                                            Гибкость схемы:
-                                        </button>
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
-                                        <div class="accordion-body">
-                                            Позволяют хранить неструктурированные или полуструктурированные данные.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
-                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                            Масштабируемость:
-                                        </button>
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                                        <div class="accordion-body">
-                                            Хорошо подходят для больших объемов данных и высоконагруженных систем.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
-                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                                            Высокая доступность:
-                                        </button>
-                                    </h2>
-                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-                                        <div class="accordion-body">
-                                            Поддерживают репликацию данных.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <strong>Недостатки:</strong>
-                                <div class="accordion" id="accordionPanelsStayOpenExampleFalse">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive"
-                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                                                Отсутствие ACID:
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                                Высокая доступность:
                                             </button>
                                         </h2>
-                                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
                                             <div class="accordion-body">
-                                                Могут потерять данные при сбоях системы.
-                                                Ограниченный язык запросов: Нет единого языка, как SQL, и инструменты
-                                                для анализа данных могут быть менее
-                                                развитыми.
+                                                Поддерживают репликацию данных.
                                             </div>
                                         </div>
                                     </div>
+
+                                    <strong>Недостатки:</strong>
+                                    <div class="accordion" id="accordionPanelsStayOpenExampleFalse">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                                    aria-controls="panelsStayOpen-collapseFive">
+                                                    Отсутствие ACID:
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    Могут потерять данные при сбоях системы.
+                                                    Ограниченный язык запросов: Нет единого языка, как SQL, и
+                                                    инструменты
+                                                    для анализа данных могут быть менее
+                                                    развитыми.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mx-3 my-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Иерархические базы данных</h5>
+                <ol class="card-text list-group list-group-numbered">
+                    <li class="list-group-item">Хранение деревьев семейных отношений;</li>
+                    <li class="list-group-item">Иерархические настройки и конфигурации.</li>
+                </ol>
+                <button type="button" class="btn btn-primary my-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalIerarh">
+                    Подробнее
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalIerarh" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Реляционные базы данных</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/src/img/ierarh.png" class="img-fluid" alt="...">
+                                <strong>Преимущества:</strong>
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                                Простая структура:
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                Удобны для хранения иерархических данных, например, в XML-формате.
+                                                Эффективны для некоторых типов запросов.
+                                                Недостатки:
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <strong>Недостатки:</strong>
+                                    <div class="accordion" id="accordionPanelsStayOpenExampleFalse">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                                    aria-controls="panelsStayOpen-collapseFive">
+                                                    Ограниченность:
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    Не подходят для хранения сложных и неструктурированных данных.
+                                                    Сложное обновление: Изменение структуры может быть сложным.
+                                                    Практическое применение:
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Закрыть</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mx-3 my-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Объектно-ориентированные базы данных</h5>
+                <ol class="card-text list-group list-group-numbered">
+                    <li class="list-group-item">Графические редакторы;</li>
+                    <li class="list-group-item">Системы управления контентом.</li>
+                </ol>
+                <button type="button" class="btn btn-primary my-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalOop">
+                    Подробнее
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalOop" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Реляционные базы данных</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/src/img/oop.jpg" class="img-fluid" alt="...">
+                                <strong>Преимущества:</strong>
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                                Поддержка объектной модели данных:
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                Удобны для приложений, использующих объектно-ориентированный подход.
+                                                Сложные отношения между данными: Могут хранить объекты и связи между
+                                                ними.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <strong>Недостатки:</strong>
+                                    <div class="accordion" id="accordionPanelsStayOpenExampleFalse">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                                    aria-controls="panelsStayOpen-collapseFive">
+                                                    Ограниченность:
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    Не всегда эффективны для структурированных данных.
+                                                    Могут быть менее распространены и иметь ограниченное сообщество.
+                                                    Практическое применение:
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Закрыть</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mx-3 my-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">NewSQL базы данных</h5>
+                <ol class="card-text list-group list-group-numbered">
+                    <li class="list-group-item">Онлайн-транзакционные системы с высокой нагрузкой.</li>
+                </ol>
+                <button type="button" class="btn btn-primary my-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalNewSQL">
+                    Подробнее
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalNewSQL" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Реляционные базы данных</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/src/img/newsql.png" class="img-fluid" alt="...">
+                                <strong>Преимущества:</strong>
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                                Совместимость:
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                Сочетание преимуществ реляционных и NoSQL баз данных.
+                                                Масштабируемость и ACID-совместимость.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <strong>Недостатки:</strong>
+                                    <div class="accordion" id="accordionPanelsStayOpenExampleFalse">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                                    aria-controls="panelsStayOpen-collapseFive">
+                                                    Ограниченность:
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    Ограниченное распространение и меньшее количество СУБД в этой
+                                                    категории
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Закрыть</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -233,74 +465,95 @@
             </div>
         </div>
     </div>
-    
-    
+    <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="100" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"></div>
+    </div>
 
-    3. Иерархические базы данных
-    Преимущества:
+    <div class="mx-5 my-5">
+        <h5>
+            Сравнение по критериям
+        </h5>
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Гибкость схемы
+            </li>
+            <li class="list-group-item" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                ACID-совместимость
+            </li>
+            <li class="list-group-item" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Масштабируемость
+            </li>
+            <li class="list-group-item" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsePho" aria-expanded="false" aria-controls="flush-collapsePho">
+                Язык запросов
+            </li>
+            <li class="list-group-item" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Применение
+            </li>
 
-    Простая структура: Удобны для хранения иерархических данных, например, в XML-формате.
-    Эффективны для некоторых типов запросов.
-    Недостатки:
-
-    Ограниченность: Не подходят для хранения сложных и неструктурированных данных.
-    Сложное обновление: Изменение структуры может быть сложным.
-    Практическое применение:
-
-    Хранение деревьев семейных отношений.
-    Иерархические настройки и конфигурации.
-
-    4. Объектно-ориентированные базы данных
-    Преимущества:
-
-    Поддержка объектной модели данных: Удобны для приложений, использующих объектно-ориентированный подход.
-    Сложные отношения между данными: Могут хранить объекты и связи между ними.
-    Недостатки:
-
-    Не всегда эффективны для структурированных данных.
-    Могут быть менее распространены и иметь ограниченное сообщество.
-    Практическое применение:
-
-    Графические редакторы.
-    Системы управления контентом.
-    
-    5. NewSQL базы данных
-    Преимущества:
-
-    Сочетание преимуществ реляционных и NoSQL баз данных.
-    Масштабируемость и ACID-совместимость.
-    Недостатки:
-
-    Ограниченное распространение и меньшее количество СУБД в этой категории.
-    Практическое применение:
-
-    Онлайн-транзакционные системы с высокой нагрузкой.
-    Сравнение по критериям
-    1. Гибкость схемы
-    NoSQL: Высокая
-    Реляционные: Низкая
-    2. ACID-совместимость
-    Реляционные: Да
-    NoSQL: Нет (за исключением некоторых NewSQL СУБД)
-    3. Масштабируемость
-    NoSQL: Высокая
-    Реляционные: Средняя
-    4. Язык запросов
-    Реляционные: SQL
-    NoSQL: Разнообразный (зависит от СУБД)
-    5. Применение
-    Реляционные: Офисные задачи, финансы
-    NoSQL: Большие объемы данных, высоконагруженные системы
-    Обзор СУБД
-    Каждая из упомянутых выше моделей баз данных поддерживается различными СУБД. Например, для реляционных баз
-    данных
-    существуют MySQL, PostgreSQL, Oracle, SQL Server и другие. Для NoSQL баз данных доступны MongoDB, Cassandra,
-    Redis и
-    другие.
-
-    Выбор конкретной СУБД зависит от требований вашего проекта, а также от того, какие критерии для вас наиболее
-    важны.
-    Сравните
+        </ol>
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>NoSQL: Высокая</p>
+                    <p>Реляционные: Низкая</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>Реляционные: Да</p>
+                    <p>NoSQL: Нет (за исключением некоторых NewSQL СУБД)</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>NoSQL: Высокая</p>
+                    <p>Реляционные: Средняя</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div id="flush-collapsePho" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>Реляционные: SQL</p>
+                    <p>NoSQL: Разнообразный (зависит от СУБД)</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>Реляционные: Офисные задачи, финансы</p>
+                    <p>NoSQL: Большие объемы данных, высоконагруженные системы</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mx-5 my-5">
+        <h4>
+            Обзор СУБД
+            Каждая из упомянутых выше моделей баз данных поддерживается различными СУБД. Например, для реляционных баз
+            данных
+            существуют MySQL, PostgreSQL, Oracle, SQL Server и другие. Для NoSQL баз данных доступны MongoDB, Cassandra,
+            Redis и
+            другие.
+        </h4>
+        <h5>
+            Выбор конкретной СУБД зависит от требований вашего проекта, а также от того, какие критерии для вас наиболее
+            важны.
+        </h5>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
