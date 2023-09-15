@@ -1,2 +1,2 @@
 # IS_DBMS
-Информационная система "СУБД" лабораторная работа ИПУПС
+Information system "DBMS" laboratory work IPUPS
