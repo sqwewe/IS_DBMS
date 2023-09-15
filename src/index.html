@@ -1,101 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <title>MSDB</title>
 </head>
+
 <body>
-    Модели/Типы Баз Данных
-Существует несколько основных типов баз данных, каждый из которых имеет свои преимущества и недостатки, а также подходит для различных практических задач. Давайте рассмотрим некоторые из них и сравним их по нескольким критериям.
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                MSDB | Типы Баз Данных
+            </a>
+        </div>
+    </nav>
+<div class="text-align-center">Существует несколько основных типов баз данных, каждый из которых имеет свои преимущества и недостатки, а
+    также
+    подходит для различных практических задач. Давайте рассмотрим некоторые из них и сравним их по нескольким
+    критериям.</div>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Реляционные базы данных</h5>
+            <ol class="card-text list-group list-group-numbered">
+                <li class="list-group-item">Бухгалтерия и финансы;</li>
+                <li class="list-group-item">Управление данными клиентов;</li>
+                <li class="list-group-item">Аналитика данных.</li>
+            </ol>
+            <button type="button" class="btn btn-primary my-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Подробнее
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Реляционные базы данных</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <strong>Преимущества:</strong>
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                            Структурированные данные:
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            Хранят данные в виде таблиц, что удобно для организации и поиска
+                                            информации.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                            ACID-совместимость:
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            Обеспечивают надежность и целостность данных.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                            SQL:
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            Мощный язык для выполнения запросов и анализа данных.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFo"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseFo">
+                                            Широко распространены:
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseFo" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            Есть много популярных СУБД, таких как MySQL, PostgreSQL, и Oracle.
+                                        </div>
+                                    </div>
+                                </div>
+                                <strong>Недостатки:</strong>
+                                <div class="accordion" id="accordionPanelsStayOpenExampleFalse">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                                Жесткая схема:
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                Изменение структуры данных может быть сложным и затратным процессом.
+                                                Не всегда эффективны для больших объемов данных и высоконагруженных
+                                                систем.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-1. Реляционные базы данных
-Преимущества:
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">NoSQL базы данных</h5>
+            <ol class="card-text list-group list-group-numbered">
+                <li class="list-group-item">Социальные сети;</li>
+                <li class="list-group-item">Хранение и анализ больших объемов данных;</li>
+                <li class="list-group-item">Интернет вещей (IoT).</li>
+            </ol>
+            <button type="button" class="btn btn-primary my-2" data-bs-toggle="modal"
+                data-bs-target="#exampleModalNOSQL">
+                Подробнее
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalNOSQL" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Реляционные базы данных</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <strong>Преимущества:</strong>
+                            <div class="accordion" id="accordionPanelsStayOpenExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                            Гибкость схемы:
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            Позволяют хранить неструктурированные или полуструктурированные данные.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                            Масштабируемость:
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            Хорошо подходят для больших объемов данных и высоконагруженных систем.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                            Высокая доступность:
+                                        </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                        <div class="accordion-body">
+                                            Поддерживают репликацию данных.
+                                        </div>
+                                    </div>
+                                </div>
 
-Структурированные данные: Хранят данные в виде таблиц, что удобно для организации и поиска информации.
-ACID-совместимость: Обеспечивают надежность и целостность данных.
-SQL: Мощный язык для выполнения запросов и анализа данных.
-Широко распространены: Есть много популярных СУБД, таких как MySQL, PostgreSQL, и Oracle.
-Недостатки:
+                                <strong>Недостатки:</strong>
+                                <div class="accordion" id="accordionPanelsStayOpenExampleFalse">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive"
+                                                aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                                Отсутствие ACID:
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                Могут потерять данные при сбоях системы.
+                                                Ограниченный язык запросов: Нет единого языка, как SQL, и инструменты
+                                                для анализа данных могут быть менее
+                                                развитыми.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
 
-Жесткая схема: Изменение структуры данных может быть сложным и затратным процессом.
-Не всегда эффективны для больших объемов данных и высоконагруженных систем.
-Практическое применение:
+    3. Иерархические базы данных
+    Преимущества:
 
-Бухгалтерия и финансы.
-Управление данными клиентов.
-Аналитика данных.
-2. NoSQL базы данных
-Преимущества:
+    Простая структура: Удобны для хранения иерархических данных, например, в XML-формате.
+    Эффективны для некоторых типов запросов.
+    Недостатки:
 
-Гибкость схемы: Позволяют хранить неструктурированные или полуструктурированные данные.
-Масштабируемость: Хорошо подходят для больших объемов данных и высоконагруженных систем.
-Высокая доступность: Поддерживают репликацию данных.
-Недостатки:
+    Ограниченность: Не подходят для хранения сложных и неструктурированных данных.
+    Сложное обновление: Изменение структуры может быть сложным.
+    Практическое применение:
 
-Отсутствие ACID: Могут потерять данные при сбоях системы.
-Ограниченный язык запросов: Нет единого языка, как SQL, и инструменты для анализа данных могут быть менее развитыми.
-Практическое применение:
+    Хранение деревьев семейных отношений.
+    Иерархические настройки и конфигурации.
 
-Социальные сети.
-Хранение и анализ больших объемов данных.
-Интернет вещей (IoT).
-3. Иерархические базы данных
-Преимущества:
+    4. Объектно-ориентированные базы данных
+    Преимущества:
 
-Простая структура: Удобны для хранения иерархических данных, например, в XML-формате.
-Эффективны для некоторых типов запросов.
-Недостатки:
+    Поддержка объектной модели данных: Удобны для приложений, использующих объектно-ориентированный подход.
+    Сложные отношения между данными: Могут хранить объекты и связи между ними.
+    Недостатки:
 
-Ограниченность: Не подходят для хранения сложных и неструктурированных данных.
-Сложное обновление: Изменение структуры может быть сложным.
-Практическое применение:
+    Не всегда эффективны для структурированных данных.
+    Могут быть менее распространены и иметь ограниченное сообщество.
+    Практическое применение:
 
-Хранение деревьев семейных отношений.
-Иерархические настройки и конфигурации.
-4. Объектно-ориентированные базы данных
-Преимущества:
+    Графические редакторы.
+    Системы управления контентом.
+    
+    5. NewSQL базы данных
+    Преимущества:
 
-Поддержка объектной модели данных: Удобны для приложений, использующих объектно-ориентированный подход.
-Сложные отношения между данными: Могут хранить объекты и связи между ними.
-Недостатки:
+    Сочетание преимуществ реляционных и NoSQL баз данных.
+    Масштабируемость и ACID-совместимость.
+    Недостатки:
 
-Не всегда эффективны для структурированных данных.
-Могут быть менее распространены и иметь ограниченное сообщество.
-Практическое применение:
+    Ограниченное распространение и меньшее количество СУБД в этой категории.
+    Практическое применение:
 
-Графические редакторы.
-Системы управления контентом.
-5. NewSQL базы данных
-Преимущества:
+    Онлайн-транзакционные системы с высокой нагрузкой.
+    Сравнение по критериям
+    1. Гибкость схемы
+    NoSQL: Высокая
+    Реляционные: Низкая
+    2. ACID-совместимость
+    Реляционные: Да
+    NoSQL: Нет (за исключением некоторых NewSQL СУБД)
+    3. Масштабируемость
+    NoSQL: Высокая
+    Реляционные: Средняя
+    4. Язык запросов
+    Реляционные: SQL
+    NoSQL: Разнообразный (зависит от СУБД)
+    5. Применение
+    Реляционные: Офисные задачи, финансы
+    NoSQL: Большие объемы данных, высоконагруженные системы
+    Обзор СУБД
+    Каждая из упомянутых выше моделей баз данных поддерживается различными СУБД. Например, для реляционных баз
+    данных
+    существуют MySQL, PostgreSQL, Oracle, SQL Server и другие. Для NoSQL баз данных доступны MongoDB, Cassandra,
+    Redis и
+    другие.
 
-Сочетание преимуществ реляционных и NoSQL баз данных.
-Масштабируемость и ACID-совместимость.
-Недостатки:
+    Выбор конкретной СУБД зависит от требований вашего проекта, а также от того, какие критерии для вас наиболее
+    важны.
+    Сравните
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
-Ограниченное распространение и меньшее количество СУБД в этой категории.
-Практическое применение:
-
-Онлайн-транзакционные системы с высокой нагрузкой.
-Сравнение по критериям
-1. Гибкость схемы
-NoSQL: Высокая
-Реляционные: Низкая
-2. ACID-совместимость
-Реляционные: Да
-NoSQL: Нет (за исключением некоторых NewSQL СУБД)
-3. Масштабируемость
-NoSQL: Высокая
-Реляционные: Средняя
-4. Язык запросов
-Реляционные: SQL
-NoSQL: Разнообразный (зависит от СУБД)
-5. Применение
-Реляционные: Офисные задачи, финансы
-NoSQL: Большие объемы данных, высоконагруженные системы
-Обзор СУБД
-Каждая из упомянутых выше моделей баз данных поддерживается различными СУБД. Например, для реляционных баз данных существуют MySQL, PostgreSQL, Oracle, SQL Server и другие. Для NoSQL баз данных доступны MongoDB, Cassandra, Redis и другие.
-
-Выбор конкретной СУБД зависит от требований вашего проекта, а также от того, какие критерии для вас наиболее важны. Сравните
 </body>
+
 </html>
